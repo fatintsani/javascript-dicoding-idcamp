@@ -13,7 +13,11 @@ console.log(
 const numberForFibonacci = 10;
 console.log(`Deret Fibonacci hingga elemen ${numberForFibonacci} adalah:`);
 for (let i = 0; i <= numberForFibonacci; i++) {
-  console.log(fibonacci(i));
+  const fibSequence = [];
+  for (let j = 0; j <= i; j++) {
+    fibSequence.push(fibonacci(j));
+  }
+  console.log(fibSequence);
 }
 
 /**
@@ -31,4 +35,3 @@ for (let i = 0; i <= numberForFibonacci; i++) {
  * [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ]
  * [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 ]
  */
-

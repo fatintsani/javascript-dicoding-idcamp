@@ -4,7 +4,7 @@ import {
   updateOrderStatus,
   calculateTotalRevenue,
   deleteOrder,
-} from './orders.js';
+} from './order.js';
 
 addOrder('Alice', [
   { name: 'Nasi Goreng', price: 20000 },
